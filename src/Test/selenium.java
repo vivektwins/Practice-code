@@ -35,7 +35,7 @@ public class selenium {
 		WebElement scroll_left = driver.findElement(By.className("gLFyf"));
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0,250)", "");
-		js.executeScript("arguments[0].scollIntoYiew()",scroll_left);
+		js.executeScript("arguments[0].scollIntoView()",scroll_left);
 		
 		//File screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		//FileUtils.copyFile(screenshot,new File(""));

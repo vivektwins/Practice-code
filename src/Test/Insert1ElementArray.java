@@ -20,7 +20,7 @@ public class Insert1ElementArray {
 				int y= a[i];
 				++i;
 				b[i]=y;
-				k=i;
+				k=i;	
 				count++;
 				
 			}

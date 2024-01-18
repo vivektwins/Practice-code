@@ -5,30 +5,32 @@ import java.util.Set;
 
 public class permutations{
 
-	public static Set<String> getPermutations(String str)
-	{
+	
+	public static Set<String> getPermutations(String str){
 		Set<String> permutations = new HashSet<String>();
 		if(str==null)
 		{
-			return null;
+			return permutations;
 		}
 		else if(str.length()==0)
 		{
 			permutations.add("");
-		return permutations;
+			return permutations;
 		}
 		
 		char first = str.charAt(0);
 		String sub = str.substring(1);
 		Set<String> word = getPermutations(sub);
-		for(String strnew: word)
+		for(String words: word)
 		{
-			for(int i=0;i<=strnew.length();i++)
+			for(int i=0;i<=words.length();i++)
 			{
-				permutations.add(strnew.substring(0,i) + first + strnew.substring(i));
+				permutations.add(words.substring(0,i)+first+words.substring(i));
 			}
+			
 		}
 		return permutations;
+		
 	}
 	
     public static void main (String args[])

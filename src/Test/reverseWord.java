@@ -29,8 +29,8 @@ public class reverseWord {
 	while(number!=0)
 	{
      int remainder = number%10;
-     reverse = reverse*10+remainder;
      number = number/10;
+     reverse = reverse*10+remainder;
 	}
 	System.out.println(reverse);
 	
@@ -69,6 +69,25 @@ public class reverseWord {
 	
 	}
 }
+	
+//	public void setUp() {
+//	
+//	RestAssured.BaseUri = "https://jsonplaceholder.typicode.com";
+//	
+//	}
+//	
+//	public void getRequest()
+//	{
+//		Response response = given().contentType(ContentType.JSON).when().get("/posts").then.extract().response();
+//		
+//		Assertion.assertEquals(200,response.getStatusCode());
+//		Assertion.assertEquals("text",response.jsonPath().getString("text"));
+//		
+//		Response response = given().contentType(ContentType.JSON).param("a","n").when().get("/posts").then.extract().response();
+//		Response response = given().header("ContentType","application/json").and.body("text").when().post("/post").then.extract().response();
+//				
+//	}
+//}
 	
 
 

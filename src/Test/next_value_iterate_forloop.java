@@ -15,7 +15,7 @@ public class next_value_iterate_forloop {
 			}
 			else
 			{
-				System.out.println(a[i]);
+			//	System.out.println(a[i]);
 			}
 		}
 	}

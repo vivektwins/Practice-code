@@ -22,7 +22,7 @@ public class ListIterateOnMap {
 		
 		
 		hm.put(1,l);
-		hm.put(2, l);
+		hm.put(2,l);
 		
 		
 		

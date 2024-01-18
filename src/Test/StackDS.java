@@ -16,9 +16,10 @@ public class StackDS {
 		s.push(2);
         s.push(3);
         
-        s.pop();
+       // s.pop();
+        s.peek();
         
-        System.out.println(s);
+        System.out.println(s.pop());
         
         SortedSet<String> set=new TreeSet();  
         set.add("Z");  

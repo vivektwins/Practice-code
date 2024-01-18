@@ -9,7 +9,7 @@ public class Anagram {
 		// TODO Auto-generated method stub
 		
 		String a = "cat";
-	    String b = "act";
+	    String b = "acet";
 	    
 	    ArrayList<Character> as = new ArrayList<Character>();
 
@@ -19,8 +19,9 @@ public class Anagram {
 	    
 	    Arrays.sort(c);
 	    Arrays.sort(c1);
+	    //System.out.println(c +" " + c1);
 	    
-	    if(c.equals(c1))
+	    if(Arrays.equals(c, c1))
 	    {
 	    	System.out.println("Anagram");
 	    }
