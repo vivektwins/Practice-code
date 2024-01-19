@@ -15,7 +15,7 @@ public class fetchNestedJSONfromArray {
  + "         \"sex\": \"M\","
  + "         \"Address\": {"
  + "             \"Office\": \"office\","
- + "             \"Home\": \"Home\""
+ + "             \"Home\": \"Naveen\""
  + "         }"
  + "     },"
  + "     \"abcDetails\": \"asdf\","
@@ -30,7 +30,7 @@ public class fetchNestedJSONfromArray {
  + "         \"sex\": \"M\","
  + "         \"Address\": {"
  + "             \"Office\": \"office\","
- + "             \"Home\": \"Home\""
+ + "             \"Home\": \"Vivek\""
  + "         }"
  + "     },"
  + "     \"abcDetails\": \"fhkdl\","
@@ -47,9 +47,11 @@ public class fetchNestedJSONfromArray {
     	{
     		
          JSONObject jo= ja.getJSONObject(i);
-         JSONObject details = jo.getJSONObject("details");
-         JSONObject address = details.getJSONObject("Address");
-         String name = address.getString("Home");
+         
+//         JSONObject id = jo.getJSONObject("id");
+       JSONObject details = jo.getJSONObject("details");
+       JSONObject address = details.getJSONObject("Address");
+       String name = address.getString("Home");
          
          System.out.println(name);
          
