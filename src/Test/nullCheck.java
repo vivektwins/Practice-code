@@ -4,7 +4,7 @@ public class nullCheck {
 	
 	public static void a(String str)
 	{
-		System.out.println(str.charAt(0));
+		System.out.println(str);
 	}
 	public static void a(Object o)
 	{
@@ -15,7 +15,7 @@ public class nullCheck {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String s = null;
+		Object s = null;
 		nullCheck.a(s);
 		
 
