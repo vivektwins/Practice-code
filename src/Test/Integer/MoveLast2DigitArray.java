@@ -9,7 +9,7 @@ public class MoveLast2DigitArray {
 		// TODO Auto-generated method stub
 		
 		int a[] = {1,2,3,4,5,6};
-		int k=3;
+		int k=2;
 		int b[] = new int[a.length-k];
 		System.out.println(Arrays.toString(b));
 		
@@ -31,6 +31,7 @@ public class MoveLast2DigitArray {
 		}
 		
 		bs.addAll(as);
+		
 
 		System.out.println(bs);
 		

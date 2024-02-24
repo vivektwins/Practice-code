@@ -46,7 +46,7 @@ public class characterPalindrome {
 	    // Driver code
 	    public static void main(String args[])
 	    {
-	        if (canFormPalindrome("malayali"))
+	        if (canFormPalindrome("geeks"))
 	            System.out.println("Yes");
 	        else
 	            System.out.println("No");

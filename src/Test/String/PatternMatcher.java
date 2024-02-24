@@ -9,7 +9,7 @@ public class PatternMatcher {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String keyword = "aaebbbaaaaddd";
+		String keyword = "abCDEFab";
 		String regex = "(.)\\1+";
 		ArrayList<String> as = new ArrayList();
 		Pattern p = Pattern.compile(regex);

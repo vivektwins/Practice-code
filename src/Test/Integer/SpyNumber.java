@@ -7,7 +7,7 @@ public class SpyNumber {
 		// TODO Auto-generated method stub
 		
 		int a= 1124;
-		int number = 1126;
+		int number = 1124;
 		int reverse =0;
 		int multiply =1;
 		while(number!=0)

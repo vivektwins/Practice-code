@@ -9,7 +9,7 @@ public class Split1Arrayinto2 {
 		// TODO Auto-generated method stub
 		
 		int a[] = {1,2,3,4,5};
-		int k=3;
+		int k=2;
 		ArrayList<Integer> as = new ArrayList<>();
 		ArrayList<Integer> bs = new ArrayList<>();
 	    

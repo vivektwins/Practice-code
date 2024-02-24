@@ -38,7 +38,7 @@ public class CharactersPalindromeMyLogic {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String s = "malayalam";
+		String s = "geeks";
 		Set<String> permutations = new HashSet<String>();
 		permutations.addAll(CharactersPalindromeMyLogic.getPermutations(s));
 		System.out.println(permutations);

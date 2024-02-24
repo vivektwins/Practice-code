@@ -14,6 +14,8 @@ public class MissingNumber_Mylogic {
 		Arrays.sort(b);
 		int n=0;
 		
+		
+		
 		for (int i=b.length-1;i>0;i--)
 		{
 		    

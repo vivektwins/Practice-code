@@ -41,7 +41,7 @@ public class permutations{
 	
     public static void main (String args[])
     {
-    	String s = "abc";
+    	String s = "ab";
     	System.out.println(getPermutations(s));
     	Scanner s1 = new Scanner(System.in);
 //    	System.out.println("Enter chumma");

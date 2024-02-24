@@ -1,0 +1,33 @@
+String s= "{"Test1":[{ 
+  "subTest0":"value1},
+  {"subTest1":"value}],
+  [{"subTest2":"value1"},
+  {"subTest3":"Placeholdervalue"}]}"
+  
+  
+josnobject first = js.getjsonObject(s)
+  
+  
+  
+  JsonArray js = new JsonArray(first);
+  jsonObject Dummy 1 =js.get(0)
+  JsonObject dummy2 =js.get(1)
+  
+ 
+  
+   
+  String exp = "";
+  
+  for(int i=0;i<dumy2.size();i++)
+  {
+   = js.getJsonObject(subtest3)
+  
+  
+ 
+  
+  JsonObject subtest = js.getJsonObject(i);
+  
+  
+  
+  
+  

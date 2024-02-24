@@ -38,6 +38,14 @@ public class fetchNestedJSONfromArray {
  + " }"
  + "]";
 
+    
+    static String s= "{\"Test1\":[{ \n"
+    		+ "    		  \"subTest0\":\"value1\"},\n"
+    		+ "    		  {\"subTest1\":\"value\"}],\n"
+    		+ "    		\"Test2\":  [{\"subTest2\":\"value1\"},\n"
+    		+ "    		  {\"subTest3\":\"Placeholdervalue\"}]}";
+    
+    
     public static void main(String[] args) throws Exception {
     	
     	JSONArray ja = new JSONArray(json);
@@ -55,8 +63,43 @@ public class fetchNestedJSONfromArray {
          
          System.out.println(name);
          
+    	} 
+    	
+    	
+    	
          
+         //2nd json
+         
+         JSONObject jos = new JSONObject(s);
+         System.out.println(jos);
+        	 
+         JSONArray ja1 = jos.getJSONArray("Test2");
+         JSONArray ja2 = jos.getJSONArray("Test1");
+         JSONObject subtest3 =null;
+         
+         for(int i=0;i<ja1.length();i++)
+         {
+        	 subtest3 = ja1.getJSONObject(i);
+        	 System.out.println(subtest3.toString());
+        	 
+        	if(subtest3.toString().contains("subTest3"))
+        	{
+        	 
+        		 String value= subtest3.getString("subTest3");
+            	 System.out.println(value);
+        	 
+        	}
+        	 
+         }
+        	 
+        	
+        	 
+        	 
+        	 
+         
+         
+       
       
-        }
+        
     }
 }
