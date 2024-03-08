@@ -1,6 +1,7 @@
 package Test;
 
 import java.awt.Container;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -8,6 +9,8 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.ListIterator;
 import java.util.Map;
 import java.util.Scanner;
@@ -18,66 +21,68 @@ import java.util.TreeSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 
+import Test.Character.characterPalindrome;
 import Test.String.patternclass;
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 
 public class test {
-	
-//	String s= "{"Test1":[{ 
-//	  "subTest0":"value1},
-//	  {"subTest1":"value}],
-//	  [{"subTest2":"value1"},
-//	  {"subTest3":"Placeholdervalue"}]}"
-	  
-	public static int match(int a[], int n)
+	static ArrayList<String> as = new ArrayList<String>();
+	static Set<Character> set = new HashSet<Character>();
+
+	public static void printall(StringBuffer prefix, char[] c, int length)
 	{
-		int b=0;
-		for(int i=0;i<a.length;i++)
+		if(length==0)
 		{
-			if(a[i]==n)
-			{
-				b= a[i];
-				System.out.println(a[i]);
-				break;
-			}
-			
+		as.add(prefix.toString());
+			return;
 		}
-		
-		return b;
-	}
-	public static int check(int a[], int n)
-	{
-		for(int i=0;i<a.length;i++)
+		for(int i=0;i<c.length;i++)
 		{
-			if(n<a[i] && n!=0)
-			{
-				System.out.println(a[--i]);
-				System.out.println("inner");
-				break;
-			}
-			else if(i==a.length-1 && n!=0)
-			{
-				System.out.println(a[i]);
-			}
+			StringBuffer bs = new StringBuffer();
+			bs.append(prefix.toString());
+			bs.append(c[i]);
+			printall(bs, c, length-1);
 		}
-		
-		return n;
 	}
 	
-	 
 	
-    public static void main(String[] args)
-    {
-        // Creating an object of class inside main()
-    	int a[] = {1,2,3,4,5,8};
-    	Arrays.sort(a);
-    	int largest = a[a.length-1];
-    	int n=9;
-    	int count =0;
-    	test.match(a, n);
-    	test.check(a, n);
-    	
-        
-    }
+	
+
+	public static void main(String[] args) throws JSONException {
+		
+	    // System.out.println(getPermutations("ABC"));
+		
+		
+		
+		int a=153,count=0;
+		int number =a, reverse=0,spy=1;
+		int fact =1,n=10;
+		String temp = "";
+		Map<Character,Integer> hm= new HashMap<Character, Integer>();
+		StringBuffer sb = new StringBuffer();
+		String s[]= {"dog", "racecar","car"};
+		for(int i=0;i<s.length;i++)
+		{
+			char c[] = s[i].toCharArray();
+			for(int j=0;j<c.length;j++)
+			{
+				set.add(c[j]);
+			}
+			for(char ch: set)
+			{
+				sb.append(ch);
+			}
+			set.clear();
+		}
+		System.out.println(sb.toString());
+		
+		
+	}
 }

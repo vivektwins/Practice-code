@@ -52,8 +52,8 @@ public class ClosestNum {
 	    	int largest = a[a.length-1];
 	    	int n=9;
 	    	int count =0;
-	    	test.match(a, n);
-	    	test.check(a, n);
+	    	ClosestNum.match(a, n);
+	    	ClosestNum.check(a, n);
 	    	
 	        
 	    }

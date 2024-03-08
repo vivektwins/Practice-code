@@ -1,4 +1,5 @@
 package Test.String;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
@@ -6,8 +7,8 @@ import java.util.Set;
 public class permutations{
 
 	
-	public static Set<String> getPermutations(String str){
-		Set<String> permutations = new HashSet<String>();
+	public static ArrayList<String> getPermutations(String str){
+		ArrayList<String> permutations = new ArrayList<String>();
 		if(str==null)
 		{
 			return permutations;
@@ -21,16 +22,13 @@ public class permutations{
 		char first = str.charAt(0);
 		String sub = str.substring(1);
 		
-		Set<String> word = getPermutations(sub);
+		ArrayList<String> word = getPermutations(sub);
+		
 		for(String words: word)
 		{
 			for(int i=0;i<=words.length();i++)
 			{
-				System.out.println(words.substring(0,i));
-				System.out.println(first);
-				System.out.println(words.substring(i));
-				
-				
+			
 				permutations.add(words.substring(0,i)+first+words.substring(i));
 			}
 			
@@ -41,7 +39,7 @@ public class permutations{
 	
     public static void main (String args[])
     {
-    	String s = "ab";
+    	String s = "abc";
     	System.out.println(getPermutations(s));
     	Scanner s1 = new Scanner(System.in);
 //    	System.out.println("Enter chumma");
