@@ -39,7 +39,7 @@ public class RotateRightIteratingOneByOne {
         int a[] = { 1, 2, 3, 4, 5 };
         int d=1;
         int n=a.length;
-        test.recursive(a,d,n);
+        recursive(a,d,n);
         
         
         

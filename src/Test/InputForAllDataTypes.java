@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class InputForAllDataTypes {
+public class InputForAllDataTypes  {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -38,6 +38,8 @@ public class InputForAllDataTypes {
 		}
 		s.close();
 		System.out.println(as);
+		
+		
 	}
 
 }

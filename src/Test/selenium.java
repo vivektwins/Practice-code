@@ -49,30 +49,38 @@ public class selenium {
 		System.setProperty("webriver.chrome.driver","/Users/vivekkumar/Downloads/chromedriver.exe");
 		
 		WebDriver driver = new ChromeDriver();
-//		driver.get("https://www.freshworks.com/demo/");
-//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
-		//driver.findElement(By.className("M6CB1crr4y5c")).click();
-		//driver.findElement(By.className("gLFyf")).sendKeys("Lakshmi Priya");
-		driver.get("http://the-internet.herokuapp.com/dropdown");
-        WebElement dropdownList = driver.findElement(By.id("dropdown"));
-        List<WebElement> options = dropdownList.findElements(By.tagName("option"));
-        List<String> s = new LinkedList<String>();
-		s.add("a");
-		s.add("u");
-		s.add("e");
-		s.add("i");
-		s.add("o");
 		
-       
-        int n=2;
-        for (int i = 0; i < options.size(); i++) {
-        	for(int j=0;j<n;j++)
-        	{
-        	System.out.println(options.get(i));
-        	
-        	}
-        	break;
-        }
+		
+		
+		
+		driver.get("https://www.google.com/");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
+		driver.findElement(By.className("M6CB1crr4y5c")).click();
+		WebElement e= driver.findElement(By.className("gLFyf"));
+				e.sendKeys("Lakshmi Priya");
+		System.out.println(e.getAttribute("src"));
+//		driver.get("http://the-internet.herokuapp.com/dropdown");
+//        WebElement dropdownList = driver.findElement(By.id("dropdown"));
+//        List<WebElement> options = dropdownList.findElements(By.tagName("option"));
+//        List<String> s = new LinkedList<String>();
+//		s.add("a");
+//		s.add("u");
+//		s.add("e");
+//		s.add("i");
+//		s.add("o");
+//		
+//		driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL+"t");
+//		driver.findElement(By.tagName("body")).sendKeys(Keys.chord(Keys.CONTROL,"n"));
+
+//        int n=2;
+//        for (int i = 0; i < options.size(); i++) {
+//        	for(int j=0;j<n;j++)
+//        	{
+//        	System.out.println(options.get(i));
+//        	
+//        	}
+//        	break;
+//        }
 	      
 		//driver.quit();
 		

@@ -18,6 +18,22 @@ public class PalindromeTrianglePattern {
 			}
 			System.out.println();
 		}
+		
+		for(int i=1;i<10;i++)
+    	{
+    		int b= i%2;
+    		
+    		if(i%2!=0)
+    		{
+    			while(b<=i)
+    			{
+    			System.out.print("*");
+    			b++;
+    			}
+    			
+    			System.out.println();
+    		}
+    	}
 
 	}
 

@@ -69,5 +69,8 @@
 	<classpathentry kind="lib" path="/Users/vivekkumar/Downloads/java-json.jar"/>
 	<classpathentry kind="lib" path="/Users/vivekkumar/Downloads/groovy-all-2.4.5-groovydoc.jar"/>
 	<classpathentry kind="lib" path="/Users/vivekkumar/Downloads/rest-assured-5.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/vivekkumar/Downloads/gson-2.2.2.jar"/>
+	<classpathentry kind="lib" path="/Users/vivekkumar/Downloads/log4j.jar"/>
+	<classpathentry kind="lib" path="/Users/vivekkumar/Downloads/selenium-java-4.0.0-rc-2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
