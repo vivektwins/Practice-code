@@ -282,9 +282,66 @@ public class fetchNestedJSONfromArray {
    		   }
 
        }
+       
+       
+       
+       //int double and json array without values
+       
+       String payload = "{\n"
+    			+ "  \"id\": 10,\n"
+    			+ "  \"title\": \"HP Pavilion 15-DK1056WM\",\n"
+    			+ "  \"description\": \"HP Pavilion 15-DK1056WM Gaming...\",\n"
+    			+ "  \"price\": 1099,\n"
+    			+ "  \"discountPercentage\": 6.18,\n"
+    			+ "  \"rating\": 4.43,\n"
+    			+ "  \"stock\": 89,\n"
+    			+ "  \"brand\": \"HP Pavilion\",\n"
+    			+ "  \"category\": \"laptops\",\n"
+    			+ "  \"thumbnail\": \"https://cdn.dummyjson.com/product-images/10/thumbnail.jpeg\",\n"
+    			+ "  \"images\": [\n"
+    			+ "    \"https://cdn.dummyjson.com/product-images/10/1.jpg\",\n"
+    			+ "    \"https://cdn.dummyjson.com/product-images/10/2.jpg\",\n"
+    			+ "    \"https://cdn.dummyjson.com/product-images/10/3.jpg\",\n"
+    			+ "    \"https://cdn.dummyjson.com/product-images/10/thumbnail.jpeg\"\n"
+    			+ "  ]\n"
+    			+ "}";
+    			
+    			JSONObject jos111 = new JSONObject(payload);
+    			System.out.println(jos111.getString("description"));
+    			
+    			System.out.println(jos111.getInt("price"));
+    			System.out.println(jos111.getDouble("rating"));
+    			JSONArray jas111 = jos111.getJSONArray("images");
+    			for(int i=0;i<jas111.length();i++)
+    			{
+    				System.out.println(jas111.getString(i));
+    			}
         	 
         	 
-         
+       
+    			
+    //Multiple json array without key
+    			
+    			String resp = "{\n"
+    		    		+ "	\"Books\": {\n"
+    		    		+ "		\"Random\": [\n"
+    		    		+ "			\"B1\",\n"
+    		    		+ "			\"B2\",\n"
+    		    		+ "			\"B3\"\n"
+    		    		+ "		]\n"
+    		    		+ "	}\n"
+    		    		+ "}";
+    		    		
+
+    		    JSONObject jos22 = new JSONObject(resp);
+    		    
+    		    JSONObject Books = jos22.getJSONObject("Books");
+    		    JSONArray random = Books.getJSONArray("Random");
+    		    for(int i=0;i<random.length();i++)
+    		    {
+    		    
+    		    	System.out.println(random.getString(i));
+    		    }
          
        
       

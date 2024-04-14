@@ -13,7 +13,7 @@ public class CSVReadandWrite {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		
-		FileReader f= new FileReader("/Users/vivekkumar/Documents/names - Sheet1.csv");
+		FileReader f= new FileReader("/Users/vivekkumar/Documents/logextract.csv - Sheet1.csv");
 		
 		BufferedReader br = new BufferedReader(f);
 		

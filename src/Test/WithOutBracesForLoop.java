@@ -13,8 +13,11 @@ public class WithOutBracesForLoop {
 			System.out.println("with braces " + a[i]);
 		}
 		for(int i=0;i<a.length;i++)
-		  System.out.print("with out braces " + a[i] +" ");
 		
+			System.out.println("with out braces " + a[i] +" ");
+		    System.out.println("hi");
+		
+		  
 	}
 
 }

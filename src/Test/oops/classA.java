@@ -10,5 +10,9 @@ public class classA {
 	{
 		System.out.println("one");
 	}
+	public void supe()
+	{
+		System.out.println("parent class");
+	}
 
 }

@@ -123,6 +123,12 @@ public class selenium {
 		
 		//File screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		//FileUtils.copyFile(screenshot,new File(""));
+		
+		//input[@name='ty']
+				//href[contains(@id,'yu')]
+				//href[contains(text(),'hj')]
+				//a[starts-with(@class,'hlk')]
+				//input[@type='submit' and @name='btnLogin']
 	}
 
 }

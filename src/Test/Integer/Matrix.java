@@ -14,11 +14,11 @@ public class Matrix {
 		{
 			for(int j=0;j<b.length;j++)
 			{
-				c[i][j]=0;
+				//c[i][j]=0;
 				
-				for(int k=0;k<b.length;k++)
+				for(int k=0;k<c.length;k++)
 				{
-					c[i][j]=a[i][k]*b[j][k];
+					c[i][j]=a[i][j]*b[j][k];
 				}
 				
 				System.out.println(c[i][j]+" ");
