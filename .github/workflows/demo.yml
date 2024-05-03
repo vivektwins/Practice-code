@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: my-step
-        run: ${{ github.workspace }}
+        run: javac ${{ github.workspace }}/blob/master/src/Test/fetchNestedJSONfromArray.java
