@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: my-step
-        run: echo "Hello World!"
+        run: javac https://github.com/vivektwins/Practice-code/blob/master/src/Test/fetchNestedJSONfromArray.java
