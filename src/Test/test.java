@@ -70,87 +70,61 @@ public class test {
 	static Map<Integer,String> listmap= new HashMap<Integer, String>();
 	static int n =10;
 	static String s= "geeks";
-  
-	//["bat, ["nat", "tan"]
+ 
 	
-//	input: str1 = “listen”  str2 = “silent”
-//			Output: “Anagram”
-//			Explanation: All characters of “listen” and “silent” are the same.
-//			 
-//			St1 = "aa" , str ="aaa" --> Not an Anagram
-	
-	
+	//Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+//	An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once
+//	Example 1:
+//	Input: strs = ["eat","tea","tan","ate","nat","bat"]
+//	Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
     
 	
 	
 	public static void main(String args[]) {
 
-		int ar=153;
-		int count=0, reverse=0, spy=1;
-		int number =ar;
-		int n1=0,n2=1,n3=0;
-		String temp, temp2 = "";
-		int temp1=0;
+		String s[] = { "eat", "tea", "tan", "ate", "nat", "bat" };
+
+		ArrayList<String> as = new ArrayList<String>();
+		ArrayList<String> bs = new ArrayList<String>();
+		ArrayList<String> cs = new ArrayList<String>();
+
+		Map<String, List<String>> hm = new HashMap<String, List<String>>();
+		String temp = "";
+
+		for (int i = 0; i < s.length; i++) {
+			char c[] = s[i].toCharArray();
+			Arrays.sort(c);
+			for (int j = 0; j < c.length; j++) {
+				temp += String.valueOf(c[j]);
+			}
+			as.add(temp);
+			temp = "";
+
+			// System.out.println(as);
+		}
+
+		for (int i = 0; i < as.size(); i++) {
+
+			if (!cs.contains(as.get(i)))
+				for (int j = 0; j < as.size(); j++) {
+					if (as.get(i).equals(as.get(j))) {
+						bs.add(s[j]);
+						cs.add(as.get(i));
+						// hm.put(s[i], bs);
+
+					}
+
+				}
+			if (!bs.isEmpty()) {
+				System.out.println(bs);
+				bs.clear();
+			}
+
+		}
 		
-			String s= "forgeeksskeegfor";
-	      String substring= "";
-	      int len = s.length();
-	      int k,j;
-	     for(int i=0;i<=s.length();i++)
-	     {
-	    	 k=i;
-	    	 for(j=0;k<=s.length();j++)
-	    	 {
-	    		substring = s.substring(j,k);
-	    		System.out.println(substring);
-	    		k++;
-	    	 }
-	     }
+		//System.out.println(hm.keySet() + " " +hm.values());
 		
 		
-		   }
+	}
+	
 }
-	
-	  
-		
-		
-		
-		
-//      {"fruits" : {"oranges":"123", "apples":"234"}}
-// "https"//test.test.com"
-// GET
-
-
-   
-//    String resp = "{\n"
-//    		+ "	\"Age\": {\n"
-//    		+ "		\"Random\": {\n"
-//    		+ "			\"Count\": 3,\n"
-//    		+ "			\"Min\": 10,\n"
-//    		+ "			\"Max\": \"vivek\"\n"
-//    		+ "		}\n"
-//    		+ "	}\n"
-//    		+ "}";
-//    		
-//
-//    JSONObject jos = new JSONObject(resp);
-//    
-//    JSONObject Age = jos.getJSONObject("Age");
-//    JSONObject random = Age.getJSONObject("Random");
-//    
-//    System.out.println(random);
-//    System.out.println(random.getInt("Min"));
-//    System.out.println(random.getInt("Count"));
-//    System.out.println(random.getString("Max"));
-//    
-//    for(int i=0;i<jos.length();i++)
-//    {
-//    	//System.out.println(jos.get(i));
-//        JSONObject jos1= jos.get(i);
-//        String value = jos1.getString(i);
-//        Assert.assertEquals(234, value.)
-//    }
-			
-	//*[class@='._5THWM1',contains((text() ,"String"))];
-	
-
